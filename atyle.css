@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .headers{
     background-color: #939878;
     color: white;
@@ -68,32 +74,34 @@
     height: 42px;
 }
 
- main section{
+main section.piska{
     display: grid;
-    
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 700px;
 }
 
- main section div{
-    width: 100%;
-    height: 686px;
-    background-color: whitesmoke;
+main section.piska div {
+    display: grid;
 }
- main section div img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+main section.piska div article:nth-child(2) {
+    padding: 10px 80px;
+    display: grid;
+    row-gap: 20px;
+
 }
-.piska button{
-    background-color: #CF6F49;
-    color: white;
-    width: 154px;
-    height: 50px;
-    border: none;
-    border-radius: 6px;
-}
-.piska input{
-    width: 310px; 
-    height: 48px;
+main section.piska div article:last-child {
+    align-self: end;
+    justify-self: end;
 }
 
-
+main section.piska div article span{
+    font-size: 14px;
+}
+main section.piska div article h2{
+    font-size: 56px;
+}
+main section.piska div article p{
+    font-size: 20px;
+    color: #65665C;
+}
+main section.piska div article 
