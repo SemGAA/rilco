@@ -67,10 +67,33 @@
     width: 159px;
     height: 42px;
 }
-main section{
+
+ main section{
+    display: grid;
+    
+}
+
+ main section div{
+    width: 100%;
+    height: 686px;
+    background-color: whitesmoke;
+}
+ main section div img{
     width: 100%;
     height: 100%;
-    background-color: whitesmoke;
+    object-fit: cover;
+}
+.piska button{
+    background-color: #CF6F49;
+    color: white;
+    width: 154px;
+    height: 50px;
+    border: none;
+    border-radius: 6px;
+}
+.piska input{
+    width: 310px; 
+    height: 48px;
 }
 
 
