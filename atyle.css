@@ -79,8 +79,8 @@ main section.piska{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 700px;
 }
-
 main section.piska div {
+    background-color: whitesmoke;
     display: grid;
 }
 main section.piska div article:nth-child(2) {
@@ -93,7 +93,29 @@ main section.piska div article:last-child {
     align-self: end;
     justify-self: end;
 }
+main section.piska div article div{
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    align-items: center;
+    width: 319px;
+    height: 48px;
+    column-gap: 16px;
+    border-radius: 6px;
+    background-color: white;
+    border: 1px solid #E7E8E3;
+    box-shadow:black;
+    padding-left: 16px;
+}
+main section.piska div article div svg{
+    
+    color: #2A2C1F;
+}
 
+
+.piskaGrizka{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+}
 main section.piska div article span{
     font-size: 14px;
 }
@@ -104,4 +126,28 @@ main section.piska div article p{
     font-size: 20px;
     color: #65665C;
 }
-main section.piska div article 
+
+main section.piska div article input{
+    border: none;
+    outline: none;
+    width: 319px;
+    height: 48px;
+    border-radius: 6px;
+}
+main section.piska div article input::placeholder {
+    color: #65665C;
+
+}
+
+main section.piska div article a{
+    display: grid;
+    text-decoration: none;
+    justify-items: center;
+    align-items: center;
+    color: white;
+    background-color: #CF6F49;
+    width: 154px;
+    height: 50px;
+    border-radius: 6px;
+    border: 1px solid #CF6F49;
+}
